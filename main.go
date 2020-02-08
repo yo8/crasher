@@ -66,7 +66,7 @@ func getMemoryStatus() {
 func main() {
 	for i := 1; i <= maxStep; i++ {
 		allocMemory(stepSize)
-		fmt.Printf("done #%d - total: %d\n", i, totalSize)
+		fmt.Printf("done #%d - total: %s\n", i, formatSize(uint64(totalSize)))
 
 		if i%checkStep == 0 {
 			getMemoryStatus()
