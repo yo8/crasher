@@ -13,8 +13,8 @@ const (
 
 	intervalTime = time.Second * 1
 	checkStep    = 50
-	maxStep      = 1024
-	stepSize     = chunkSizeGB
+	maxStep      = 1024 * 100
+	stepSize     = chunkSizeMB * 10
 )
 
 var (

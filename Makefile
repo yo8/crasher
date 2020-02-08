@@ -24,4 +24,4 @@ bench:
 cover:
 	$(GOTEST) -race -cover -covermode=atomic -coverprofile=coverage.out
 run: build
-	time ./$(BINARY)
+	./$(BINARY)
