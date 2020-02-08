@@ -9,10 +9,10 @@ jobs:
       max-parallel: 10
       fail-fast: false
       matrix:
-        vm-os: [ubuntu-latest]
-        go-version: [1.13.5]
-        # vm-os: [ubuntu-latest, macOS-latest, windows-latest]
-        # go-version: [1.11.13, 1.12.13, 1.13.5]
+#        vm-os: [ubuntu-latest]
+#        go-version: [1.13.5]
+         vm-os: [ubuntu-latest, macOS-latest, windows-latest]
+         go-version: [1.11.13, 1.12.13, 1.13.5]
 
     steps:
     - name: Set up Go ${{ matrix.go-version }}
