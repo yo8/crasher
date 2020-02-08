@@ -12,7 +12,7 @@ const (
 	chunkSizeGB = 1024 * 1024 * 1024
 
 	intervalTime = time.Second * 1
-	checkStep    = 50
+	checkStep    = 100
 	maxStep      = 1024 * 100
 	stepSize     = chunkSizeMB * 10
 )
